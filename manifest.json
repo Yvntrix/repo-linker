@@ -1,0 +1,16 @@
+{
+  "name": "GitHub Repository Link",
+  "version": "1.0",
+  "description": "Adds a link to your GitHub repository in the navigation bar.",
+  "manifest_version": 2,
+  "permissions": ["tabs", "activeTab", "http://*/*", "https://*/*"],
+  "browser_action": {
+    "default_title": "GitHub Repository Link"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://github.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
