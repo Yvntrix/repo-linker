@@ -19,7 +19,10 @@ newLink.setAttribute(
 );
 newLink.setAttribute("aria-label", "Your repositories");
 newLink.setAttribute("data-turbo", "false");
-newLink.setAttribute("href", `${user.alt.slice(1)}?tab=repositories`);
+newLink.setAttribute(
+  "href",
+  `https://github.com/${user.alt.slice(1)}?tab=repositories`
+);
 
 // Add the new link element to the navigation bar
 navBar.insertBefore(newLink, navBar.firstChild);
